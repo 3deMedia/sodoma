@@ -1,0 +1,34 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    # RewriteCond %{REQUEST_FILENAME} !-d
+    # RewriteCond %{REQUEST_URI} (.+)/$
+    # RewriteRule ^ %1 [L,R=301]
+
+
+
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    Redirect 301 /escorts-barcelona/ /escort-barcelona/
+    Redirect 301 /escorts-madrid/ /escort-madrid/
+    Redirect 301 /estambul-la-pasion-turca/ /blog/estambul-la-pasion-turca/
+    Redirect 301 /chicas-webcam-sexo-online/ /blog/chicas-webcam-sexo-online/
+    Redirect 301 /escorts-norte-espana/ /blog/escorts-norte-espana/
+    Redirect 301 /azafatas-mobile-world-congress/ /blog/azafatas-mobile-world-congress/
+    Redirect 301 /how-to-find-best-escort-in-united-kingdom/ /blog/how-to-find-best-escort-in-united-kingdom/
+    Redirect 301 /diferencias-entre-una-escort-y-una-modelo-de-webcam-xxx/ /blog/diferencias-entre-una-escort-y-una-modelo-de-webcam-xxx/
+    Redirect 301 /cuales-son-los-servicios-preferidos-por-las-chicas-de-compania/ /blog/cuales-son-los-servicios-preferidos-por-las-chicas-de-compania/
+</IfModule>
