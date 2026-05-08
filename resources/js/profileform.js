@@ -7,7 +7,7 @@ let country = "es"
 function initAutocomplete() {
     address_input = document.querySelector("#profile_address");
 
-    autocomplete = new google.maps.places.PlaceAutocompleteElement(address_input, {
+    autocomplete = new google.maps.places.Autocomplete(address_input, {
         componentRestrictions: {
             country: [country]
         },
