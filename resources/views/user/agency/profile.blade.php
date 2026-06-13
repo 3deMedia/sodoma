@@ -8,25 +8,23 @@
             <div class="col-12 mx-auto">
 
                 @php
-                    $admin=false
+                    $admin = false
                 @endphp
                 @if (!$profile)
-                    <x-forms.create-agency :admin="$admin"/>
+                    <x-forms.create-agency :admin="$admin" />
                 @else
-                    <x-forms.update-agency :admin="$admin" :profile="$profile"/>
+                    <x-forms.update-agency :admin="$admin" :profile="$profile" />
                 @endif
 
             </div>
         </div>
         @push('js')
 
-     <script
-     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1P3fvbshvJOW8re3caz4gqAqi8CwZUmI&libraries=places"
+            <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1U0Z-vA_q8EAzCAT8mK6P8fYuLkzad0o&libraries=places"></script>
 
-   ></script>
+            <script src="{{mix('js/profileform.js')}}"></script>
 
-   <script src="{{mix('js/profileform.js')}}"></script>
-
-@endpush
+        @endpush
     </div>
 </x-app-layout>
