@@ -13,7 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
     <!-- Extra details for Live View on GitHub Pages -->
     <!-- Icons -->
     <link href="{{ asset('argon') }}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
@@ -26,15 +28,16 @@
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WKZXQ6X5PS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKZXQ6X5PS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-WKZXQ6X5PS');
-</script>
+        gtag('config', 'G-WKZXQ6X5PS');
+    </script>
 </head>
+
 <body class="{{ $class ?? '' }}" style="min-height: 100vh;">
     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
         @csrf
@@ -43,16 +46,16 @@
 
         @include('layouts.navbar2')
         @include('user.layouts.botones')
-   <div class="bg-gris" style="border-radius: 0.5rem; margin-top:2rem;">
-        <div class="header pb-4 pt-2 pt-lg-4 d-flex align-items-center">
-            <x-auth-validation-errors />
-            @if (session('sucess'))
-            <x-auth-session-status :status="session('success')" />
-            @endif
-            @if (session('error'))
-            <x-auth-session-status :status="session('error')" />
-            @endif
-        </div>
+        <div class="bg-gris" style="border-radius: 0.5rem; margin-top:2rem;">
+            <div class="header pb-4 pt-2 pt-lg-4 d-flex align-items-center">
+                <x-auth-validation-errors />
+                @if (session('sucess'))
+                    <x-auth-session-status :status="session('success')" />
+                @endif
+                @if (session('error'))
+                    <x-auth-session-status :status="session('error')" />
+                @endif
+            </div>
             {{ $slot }}
         </div>
     </div>
@@ -61,6 +64,7 @@
     <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     @stack('js')
     <!-- Argon JS -->
-    <script defer src="{{ asset('argon') }}/js/argon.js?v=1.0.0"></script>
+    <script defer src="{{ asset('argon') }}/js/argon.js?v=1.0.1"></script>
 </body>
+
 </html>
