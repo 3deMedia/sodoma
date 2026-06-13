@@ -15,7 +15,8 @@
     </div>
     @push('js')
         <script src="{{mix('js/profileform.js')}}"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1U0Z-vA_q8EAzCAT8mK6P8fYuLkzad0o&libraries=places"
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1U0Z-vA_q8EAzCAT8mK6P8fYuLkzad0o&loading=async&libraries=places&callback=initMap"
             async></script>
     @endpush
 </x-admin-layout>
