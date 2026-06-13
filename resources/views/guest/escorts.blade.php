@@ -122,7 +122,7 @@
             <div class="row">
                 <div class="my-6">
                     <h3 class="homeh">El trato con las señoritas de compañía</h3>
-                    <p>Siempre que se realice 1 servicio se ha de tener en cuenta, que las escorts, son personas
+                    <p>Siempre que se realice un servicio se ha de tener en cuenta, que las escorts, son personas
                         normales y corrientes que tienen su vida, jóvenes chicas estudiantes, modelos, actrices,
                         masajistas cuando las llamas puede que tengan que hacer algo antes de quedar con usted,
                         recomendamos siempre llamarlas con al menos 1 hora de antelación. Dependerá de cada chica las
