@@ -155,7 +155,7 @@
     </div>
     @push('js')
         <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1U0Z-vA_q8EAzCAT8mK6P8fYuLkzad0o&loading=async&libraries=places&callback=initMap"></script>
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1U0Z-vA_q8EAzCAT8mK6P8fYuLkzad0o&loading=async&libraries=places&callback=initialize"></script>
         <script src="{{mix('js/profileform.js')}}"></script>
     @endpush
 </x-app-layout>
