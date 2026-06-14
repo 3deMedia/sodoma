@@ -29,7 +29,7 @@
             OverviewMapControl: false,
             mapTypeControlOptions: false
         });
-        const marker = new google.maps.marker.AdvancedMarkerElement({
+        const marker = new google.maps.Marker({
             position: { lat: center.lat, lng: center.lng },
             map
         });
