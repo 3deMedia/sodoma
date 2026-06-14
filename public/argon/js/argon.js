@@ -155,7 +155,7 @@ function initMap() {
 
     map = new google.maps.Map(map, mapOptions);
 
-    var marker = new google.maps.Marker({
+    var marker = new google.maps.marker.AdvancedMarkerElement({
         position: myLatlng,
         map: map,
         animation: google.maps.Animation.DROP,

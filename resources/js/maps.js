@@ -48,7 +48,7 @@ function createMarker(user, map) {
     </svg>
     `);
 
-    const marker = new google.maps.Marker({
+    const marker = new google.maps.marker.AdvancedMarkerElement({
         position: { lat: user.lat, lng: user.lng },
         map,
         icon: {

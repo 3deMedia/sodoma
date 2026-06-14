@@ -14,25 +14,25 @@
     <script src="https://maps.googleapis.com/maps/api/js?key={{ env('MAPS_GOOGLE_MAPS_ACCESS_TOKEN2') }}"></script>
 
     <script>
-          const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14,
-        center: center,
-        disableDefaultUI: true,
-        panControl: false,
-        zoomControl: true,
-        scaleControl: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        scrollwheel: false,
-        MapTypeControl: false,
-        fullScreenControl: false,
-        streetViewControl: false,
-        OverviewMapControl: false,
-        mapTypeControlOptions: false
-    });
-    const marker = new google.maps.Marker({
-        position: { lat: center.lat, lng: center.lng },
-        map
-    });
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 14,
+            center: center,
+            disableDefaultUI: true,
+            panControl: false,
+            zoomControl: true,
+            scaleControl: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false,
+            MapTypeControl: false,
+            fullScreenControl: false,
+            streetViewControl: false,
+            OverviewMapControl: false,
+            mapTypeControlOptions: false
+        });
+        const marker = new google.maps.marker.AdvancedMarkerElement({
+            position: { lat: center.lat, lng: center.lng },
+            map
+        });
 
     </script>
 @endpush
