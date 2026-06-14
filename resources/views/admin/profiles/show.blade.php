@@ -13,7 +13,8 @@
             <div class="col-12">
                 <div class="p-2 rounded border">
                     <p>El coste vip para escorts es de {{$new_escort_cost}}, y el usuario tiene
-                        {{ $profile->User->coins}} coins;</p>
+                        {{ $profile->User->coins}} coins;
+                    </p>
                     <p>Al crear el Vip no se descuentan coins, ya puede haber hecho transferencia. SI es necesario
                         quitar coins quitar desde el boton "Ver usuario"</p>
 
@@ -58,7 +59,7 @@
 
             <script src="{{mix('js/profileform.js')}}"></script>
             <script
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1U0Z-vA_q8EAzCAT8mK6P8fYuLkzad0o&callback=initAutocomplete&libraries=places"
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1U0Z-vA_q8EAzCAT8mK6P8fYuLkzad0o&callback=initialize&libraries=places"
                 async></script>
 
         @endpush
