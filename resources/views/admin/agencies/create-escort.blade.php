@@ -15,8 +15,7 @@
     </div>
     @push('js')
         <script src="{{mix('js/profileform.js')}}"></script>
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1U0Z-vA_q8EAzCAT8mK6P8fYuLkzad0o&loading=async&libraries=places&callback=initialize"
-            async></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=@php $api_key = env('MAPS_GOOGLE_MAPS_ACCESS_TOKEN2');
+        echo $api_key . '&loading=async&libraries=places&callback=initialize';@endphp" async></script>
     @endpush
 </x-admin-layout>

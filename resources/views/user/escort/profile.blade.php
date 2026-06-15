@@ -21,8 +21,8 @@
                     $('input[name=main_photo]').val(photo_id)
                 });
             </script>
-            <script
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1U0Z-vA_q8EAzCAT8mK6P8fYuLkzad0o&libraries=places"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=@php $api_key = env('MAPS_GOOGLE_MAPS_ACCESS_TOKEN2');
+            echo $api_key . '&loading=async&libraries=places';@endphp"></script>
             <script src="{{mix('js/profileform.js')}}"></script>
         @endpush
     </div>
