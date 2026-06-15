@@ -1,5 +1,9 @@
 <x-app-layout>
+    @push('js')
 
+        <script src="https://maps.googleapis.com/maps/api/js?key=@php $api_key = env('MAPS_GOOGLE_MAPS_ACCESS_TOKEN2');
+        echo $api_key . '&loading=async&libraries=places';@endphp" async defer></script>
+    @endpush
 
     <div class="p-4">
         <x-forms.update-escort :admin="false" :profile="$profile" :agency="$agency->id" />
@@ -16,8 +20,6 @@
 
 
         </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=@php $api_key = env('MAPS_GOOGLE_MAPS_ACCESS_TOKEN2');
-        echo $api_key . '&loading=async&libraries=places';@endphp" async defer></script>
         <script src="{{mix('js/profileform.js')}}"></script>
     @endpush
 
