@@ -155,7 +155,7 @@
     </div>
     @push('js')
         <script src="https://maps.googleapis.com/maps/api/js?key=@php $api_key = env('MAPS_GOOGLE_MAPS_ACCESS_TOKEN2');
-        echo $api_key . '&libraries=places';@endphp" async defer></script>
+        echo $api_key . '&loading=async&libraries=places';@endphp" async defer></script>
         <script src="{{mix('js/profileform.js')}}"></script>
     @endpush
 </x-app-layout>

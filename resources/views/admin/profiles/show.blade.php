@@ -59,7 +59,7 @@
 
             <script src="{{mix('js/profileform.js')}}"></script>
             <script src="https://maps.googleapis.com/maps/api/js?key=@php $api_key = env('MAPS_GOOGLE_MAPS_ACCESS_TOKEN2');
-            echo $api_key . '&loading=async&libraries=places&callback=initialize';@endphp" async></script>
+            echo $api_key . '&loading=async&libraries=places';@endphp" async></script>
 
         @endpush
 
