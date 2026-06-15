@@ -1,5 +1,10 @@
 <x-app-layout>
 
+    @push('js')
+        <script src="https://maps.googleapis.com/maps/api/js?key=@php $api_key = env('MAPS_GOOGLE_MAPS_ACCESS_TOKEN2');
+        echo $api_key . '&loading=async&libraries=places';@endphp"></script>
+    @endpush
+
     <div class="container mb-8" style="min-height: 70vh;">
         @if ($message = session('success'))
             <div class="alert alert-primary alert-dismissible fade show" role="alert">
@@ -154,8 +159,6 @@
         </div>
     </div>
     @push('js')
-        <script src="https://maps.googleapis.com/maps/api/js?key=@php $api_key = env('MAPS_GOOGLE_MAPS_ACCESS_TOKEN2');
-        echo $api_key . '&loading=async&libraries=places';@endphp" async defer></script>
         <script src="{{mix('js/profileform.js')}}"></script>
     @endpush
 </x-app-layout>
